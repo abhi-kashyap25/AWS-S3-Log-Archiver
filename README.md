@@ -31,22 +31,27 @@ aws-s3-log-archiver/
 ├── archive-logs-s3.sh        # Bash script for archiving and uploading logs
 ├── logs/                     # Directory for storing logs (e.g., cron execution logs)
 └── README.md                 # Project documentation
+```
 
 ## 🛠 Setup Instructions
 1. Clone the Repository
+```bash
 git clone https://github.com/username/aws-s3-log-archiver.git
 cd aws-s3-log-archiver
-
+```
 ## 2. Edit the Script
 Open archive-logs-s3.sh and modify the following variables:
 
+```bash
 LOG_DIR="/path/to/logs"                  # Path to your logs directory
 S3_BUCKET_NAME="your-s3-bucket-name"    # Name of the target S3 bucket
+```
 
 ## 3. Set Permissions
 Ensure the script is executable:
-
+```bash
 chmod +x archive-logs-s3.sh
+```
 
 ## 4. Test the Script
 Run the script manually to ensure it works:
